@@ -1,0 +1,18 @@
+export const GET_AREAS = "GET_AREAS";
+export const GET_AREA_ID = "GET_AREA_ID";
+export const GET_DISTRICTS = "GET_DISTRICTS";
+export const GET_DISTRICT_ID = "GET_DISTRICT_ID";
+
+
+export const ADD_CUSTOMER = "ADD_CUSTOMER";
+export const REMOVE_CUSTOMER = "REMOVE_CUSTOMER";
+export const SHOW_OBJECTS = "SHOW_OBJECTS";
+export const FORM_SUBJECT_ID = "FORM_SUBJECT_ID";
+
+
+export const GET_TEACHERS = "GET_TEACHERS";
+export const GET_TEACHERS_CARDS = "GET_TEACHERS_CARDS";
+
+
+export const SHOW_MORE_CARDS = "SHOW_MORE_CARDS";
+export const FETCH_OBJECTS = "FETCH_OBJECTS";
