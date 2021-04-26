@@ -7,7 +7,6 @@ import {fetchObjects} from "../../asyncAction/objects";
 import {useDispatch, useSelector} from "react-redux";
 import Test from "../teacher/test";
 import {
-    deleteCustomerAction,
     formSubjectIdAction,
     formSubjectNameAction,
     getAreaIdAction, getDistrictIdAction
@@ -30,21 +29,21 @@ import {fetchTeachersCards} from "../../asyncAction/teachers";
 //     // },
 // });
 
-const useStyles = makeStyles({
-    root: {
-        background: '#009990',
-        border: 0,
-        borderRadius: 5,
-        color: 'white',
-        height: 45,
-        padding: '0 30px',
-    },
+// const useStyles = makeStyles({
+//     root: {
+//         background: '#009990',
+//         border: 0,
+//         borderRadius: 5,
+//         color: 'white',
+//         height: 45,
+//         padding: '0 30px',
+//     },
 
 
-});
+// });
 
 const SearchPanel = () => {
-    const classes = useStyles();
+    // const classes = useStyles();
     const dispatch = useDispatch();
     const subjects = useSelector((state) => state.subjects.subjects);
     const areas = useSelector((state) => state.areas.areas);
@@ -111,7 +110,7 @@ const SearchPanel = () => {
             renderInput={(params) => <TextField  {...params} label="Район" variant="outlined" />}
         />
         <Button
-            className={classes.root}
+            style={{ height: "56px" }}
             color="primary"
             variant="contained"
             onClick={() => {
@@ -129,7 +128,7 @@ export default SearchPanel;
 
 
 
-// Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
+
 
 
 
