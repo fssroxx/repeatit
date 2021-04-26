@@ -1,0 +1,14 @@
+.search{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btn{
+    display: flex;
+    align-self: center;
+    height: 55px;
+}
+Autocomplete{
+    margin-right: 10px;
+}

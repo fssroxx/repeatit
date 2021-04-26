@@ -1,7 +1,7 @@
 import {applyMiddleware, createStore, combineReducers} from "redux";
 import thunk from "redux-thunk";
 import {cardsReducer} from "./reducers/cardsReducer";
-import {objectsReducer} from "./reducers/objectsReducer";
+import {subjectsReducer} from "./reducers/subjectsReducer";
 import {areasReducer} from "./reducers/areasReducer";
 import {teachersReducer} from "./reducers/teachersReducer";
 import {composeWithDevTools} from "redux-devtools-extension";
@@ -9,7 +9,7 @@ import {composeWithDevTools} from "redux-devtools-extension";
 
 const rootReducer = combineReducers({
     cards: cardsReducer,
-    customers: objectsReducer,
+    subjects: subjectsReducer,
     areas: areasReducer,
     teachers: teachersReducer
 })

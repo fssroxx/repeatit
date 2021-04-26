@@ -3,10 +3,11 @@ import {
     GET_AREAS,
     GET_DISTRICT_ID,
     GET_DISTRICTS,
-    ADD_CUSTOMER,
     FORM_SUBJECT_ID,
+    FORM_SUBJECT_NAME,
     REMOVE_CUSTOMER,
-    SHOW_OBJECTS,
+    SHOW_SUBJECTS,
+    SHOW_MORE_CARDS,
     GET_TEACHERS, GET_TEACHERS_CARDS,
 } from "./types";
 
@@ -29,19 +30,21 @@ export const getDistrictIdAction = (payload) => ({
 
 
 
-export const addCustomerAction = (payload) => ({
-    type:ADD_CUSTOMER, payload
-});
 
 export const formSubjectIdAction = (payload) => ({
     type:FORM_SUBJECT_ID, payload
 });
+
+export const formSubjectNameAction = (payload) => ({
+    type:FORM_SUBJECT_NAME, payload
+});
+
 export const deleteCustomerAction = (payload) => ({
     type:REMOVE_CUSTOMER, payload
 });
 
-export const showObjectsAction = (payload) => ({
-    type:SHOW_OBJECTS, payload
+export const showSubjectsAction = (payload) => ({
+    type:SHOW_SUBJECTS, payload
 });
 
 
@@ -51,4 +54,8 @@ export const getTeachersAction = (payload) => ({
 
 export const getTeachersCardsAction = (payload) => ({
     type:GET_TEACHERS_CARDS, payload
+});
+
+export const showMoreCardsAction = (payload) => ({
+    type:SHOW_MORE_CARDS, payload
 });

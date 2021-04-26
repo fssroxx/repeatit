@@ -1,0 +1,67 @@
+.teacher-list-item{
+    display: flex;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 15px 0;
+    width: 850px;
+    height: 110px;
+    position: relative;
+}
+
+img{
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    left: 16px;
+    top: 16px;
+    border-radius: 50%;
+}
+
+.name{
+    position: absolute;
+    height: 21px;
+    left: 110px;
+    top: 16px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.subject{
+    display: inline-block;
+    position: absolute;
+    height: 23px;
+    left: 110px;
+    top: 49px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.price{
+    position: absolute;
+    width: 89px;
+    height: 23px;
+    left: 110px;
+    top: 74px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #009990;
+
+}
