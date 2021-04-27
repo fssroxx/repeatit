@@ -81,44 +81,51 @@ const SearchPanel = () => {
 
     <div className='search'>
 
-        <Autocomplete
-            id="combo-box-demo"
-            options={subjects}
-            onChange={(event, option) => {
-                selectSubject(option)}}
-            getOptionLabel={(option) => option.name}
-            style={{ width: 300, marginRight: 10 + "px" }}
-            renderInput={(params) => <TextField  {...params} label="Предмет" variant="outlined" />}
-        />
-        <Autocomplete
-            id="combo-box-demo"
-            options={areas}
-            onChange={(event, option) => {
-                formAreaId(option)}}
-            getOptionLabel={(option) => option.namePrep}
-            style={{ width: 300, marginRight: 10 + "px" }}
-            renderInput={(params) => <TextField  {...params} label="Город" variant="outlined" />}
-        />
-        <Autocomplete
-            id="combo-box-demo"
-            options={districts}
+        <div className="search__list" >
+            <Autocomplete
+                id="combo-box-demo"
+                options={subjects}
+                onChange={(event, option) => {
+                    selectSubject(option)}}
+                getOptionLabel={(option) => option.name}
+                style={{ width: 300, marginRight: 10 + "px" }}
+                renderInput={(params) => <TextField  {...params} label="Предмет" variant="outlined" />}
+            />
+        </div>
+        <div className="search__list">
+            <Autocomplete
+                id="combo-box-demo"
+                options={areas}
+                onChange={(event, option) => {
+                    formAreaId(option)}}
+                getOptionLabel={(option) => option.cityName}
+                style={{ width: 300, marginRight: 10 + "px" }}
+                renderInput={(params) => <TextField  {...params} label="Город" variant="outlined" />}
+            />
+        </div>
+        <div className="search__list">
+            <Autocomplete
+                id="combo-box-demo"
+                options={districts}
 
-            onChange={(event, option) => {
-            formDistrictId(option)}}
-            getOptionLabel={(option) => option.name}
-            style={{ width: 300, marginRight: 10 + "px" }}
-            renderInput={(params) => <TextField  {...params} label="Район" variant="outlined" />}
-        />
-        <Button
-            style={{ height: "56px" }}
-            color="primary"
-            variant="contained"
-            onClick={() => {
-                makeTeachersCards();
-            }}
-        >
-            Получить учителей
-        </Button>
+                onChange={(event, option) => {
+                    formDistrictId(option)}}
+                getOptionLabel={(option) => option.name}
+                style={{ width: 300, marginRight: 10 + "px" }}
+                renderInput={(params) => <TextField  {...params} label="Район" variant="outlined" />}
+            />
+        </div>
+        <div className="search__button">
+            <Button
+                color="primary"
+                variant="contained"
+                onClick={() => {
+                    makeTeachersCards();
+                }}
+            >
+                Применить фильтр
+            </Button>
+        </div>
     </div>
   );
 };

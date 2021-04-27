@@ -14,7 +14,7 @@ const TeacherListItem = () => {
         <div>
             <div className="name">{`${card.firstName} ${card.patrName}`}</div>
             <div className="subject">{subject}</div>
-            <div className="price">{card.minPricePerHour}</div>
+            <div className="price">от {card.minPricePerHour} р</div>
         </div>
     </div>)
 

@@ -1,14 +1,36 @@
-.search{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.btn{
-    display: flex;
-    align-self: center;
-    height: 55px;
+.search__button Button{
+  height: 54px;
+  margin-bottom: 10px;
 }
-Autocomplete{
-    margin-right: 10px;
+
+.btn {
+  display: flex;
+  align-self: center;
+  height: 55px;
+}
+Autocomplete {
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search__list{
+    margin-bottom: 10px;
+  }
+  .search__button Button{
+    height: 45px;
+    margin-bottom: 10px;
+  }
 }
