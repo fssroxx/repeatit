@@ -6,7 +6,7 @@ import {
 export const fetchTeachers = (areaId, districtId, subjectId) => {
   return function (dispatch) {
     fetch(
-      `http://api.repetit.ru/public/search/teacherIds?AreaId=${areaId}&DistrictId=${districtId}&SubjectId=${subjectId}`,
+      `https://api.repetit.ru/public/search/teacherIds?AreaId=${areaId}&DistrictId=${districtId}&SubjectId=${subjectId}`,
       {
         method: "GET",
         headers: {
@@ -25,7 +25,7 @@ export const fetchTeachersCards = (areaId, districtId, subjectId) => {
   return async function (dispatch) {
     try {
       const teachersId = await makeRequest(
-        `http://api.repetit.ru/public/search/teacherIds?AreaId=${areaId}&DistrictId=${districtId}&SubjectId=${subjectId}`,
+        `https://api.repetit.ru/public/search/teacherIds?AreaId=${areaId}&DistrictId=${districtId}&SubjectId=${subjectId}`,
         {
           method: "GET",
         }
@@ -36,7 +36,7 @@ export const fetchTeachersCards = (areaId, districtId, subjectId) => {
         .join("&");
 
       const cards = await makeRequest(
-        `http://api.repetit.ru/public/teachers/short?${ids}`,
+        `https://api.repetit.ru/public/teachers/short?${ids}`,
         {
           method: "GET",
         }
